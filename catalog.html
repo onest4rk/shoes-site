@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Browse the full ShoeSpot catalog with filters, search, and local product renders." />
+  <title>Catalog — ShoeSpot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="ShoeSpot home">
+        <span class="brand-mark">S</span>
+        <span class="brand-copy">
+          ShoeSpot
+          <span>3D sneaker studio</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="catalog.html" aria-current="page">Catalog</a>
+        <a href="blog.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+
+      <a class="nav-cta" href="index.html#featured">Back to home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom: 18px;">
+      <div class="container split-layout">
+        <article class="panel" data-reveal>
+          <span class="eyebrow">Catalog</span>
+          <h1 style="max-width: 11ch; margin-top: 18px;">Find the pair that fits your lane.</h1>
+          <p class="lead">
+            Search, filter, and sort the full ShoeSpot lineup. The catalog uses the same local product art as the homepage, so the experience stays consistent.
+          </p>
+        </article>
+
+        <div class="catalog-hero-grid" data-catalog-hero data-reveal></div>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Explore</span>
+            <h2 class="section-title">Browse by mood, motion, or price.</h2>
+          </div>
+          <p class="section-lead">
+            Use the filters to narrow the collection, or search by name, category, or feature.
+          </p>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="filter-group" data-catalog-filters>
+            <button class="filter-chip is-active" type="button" data-category="all" aria-pressed="true">All</button>
+            <button class="filter-chip" type="button" data-category="runner" aria-pressed="false">Runner</button>
+            <button class="filter-chip" type="button" data-category="street" aria-pressed="false">Street</button>
+            <button class="filter-chip" type="button" data-category="trail" aria-pressed="false">Trail</button>
+            <button class="filter-chip" type="button" data-category="lounge" aria-pressed="false">Lounge</button>
+            <button class="filter-chip" type="button" data-category="court" aria-pressed="false">Court</button>
+            <button class="filter-chip" type="button" data-category="mid" aria-pressed="false">Mid</button>
+          </div>
+
+          <div class="controls">
+            <input class="search-field" type="search" placeholder="Search shoes, materials, or features" aria-label="Search shoes" data-catalog-search />
+            <select class="sort-select" aria-label="Sort shoes" data-catalog-sort>
+              <option value="featured">Featured</option>
+              <option value="rating">Top rated</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="section-lead" style="margin-bottom: 18px;">
+          <strong data-catalog-results>6 shoes found</strong>
+        </p>
+
+        <div class="catalog-grid" data-catalog-grid></div>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="container split-layout">
+        <article class="panel">
+          <span class="section-kicker">Fit guide</span>
+          <h3>Choose the size with less second-guessing.</h3>
+          <table class="size-table" aria-label="Shoe fit notes">
+            <thead>
+              <tr>
+                <th>Style</th>
+                <th>Recommendation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Runner</td>
+                <td>True to size with room in the toe box</td>
+              </tr>
+              <tr>
+                <td>Trail</td>
+                <td>Half size up if you wear thick socks</td>
+              </tr>
+              <tr>
+                <td>Lounge</td>
+                <td>Relaxed fit and easy on/off</td>
+              </tr>
+              <tr>
+                <td>Mid / Court</td>
+                <td>True to size for a locked-in feel</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="panel">
+          <span class="section-kicker">Materials</span>
+          <h3>What changes between pairs.</h3>
+          <ul class="check-list">
+            <li><span class="dot" aria-hidden="true"></span><span>Mesh uppers breathe better for run-day sessions.</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Trail models use deeper treads and sturdier overlays.</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Lounge shoes are softer, wider, and easier to wear around the house.</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Mid-top and court shoes lean more supportive and structured.</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">S</span>
+          <span class="brand-copy">
+            ShoeSpot
+            <span>3D sneaker studio</span>
+          </span>
+        </a>
+        <p>Browse the catalog, save your favorites, and test the local UI without any external dependencies.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:hello@shoespot.example">hello@shoespot.example</a>
+        <span>Saved items: <span data-brand-saved-count>0</span></span>
+        <span>© <span data-year></span> ShoeSpot</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

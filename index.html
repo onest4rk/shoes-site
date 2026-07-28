@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLE STUDIO — Limited Edition Footwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <nav class="nav glass" id="nav">
+    <a href="#" class="nav__logo">SOLE STUDIO</a>
+    <div class="nav__links">
+      <a href="#drops">Drops</a>
+      <a href="#craft">Craft</a>
+      <a href="#collection">Collection</a>
+      <a href="#journal">Journal</a>
+    </div>
+    <div class="nav__actions">
+      <button class="nav__icon" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="nav__icon" aria-label="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="hero__kicker reveal">Autumn / Winter 2026</p>
+        <h1 class="hero__title reveal">
+          Sculpted for<br>
+          <em>the pavement.</em>
+        </h1>
+        <p class="hero__desc reveal">
+          Hand-finished uppers. Vibram® soles. Limited to 200 pairs per colorway.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#drops" class="btn btn--primary">View the Drop</a>
+          <a href="#craft" class="btn btn--ghost">Our Process</a>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__image-wrap">
+          <img class="hero__image" src="https://freepngimg.com/download/shoes/28084-5-sneaker-transparent-image.png" alt="Terracotta Runner — product shot" />
+        </div>
+        <div class="hero__badge glass">
+          <span class="hero__badge-num">037</span>
+          <span class="hero__badge-label">of 200</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero__colorway">
+      <div class="colorway-selector">
+        <span class="colorway-label">Colorway</span>
+        <div class="colorway-swatches">
+          <button class="swatch active" data-colorway="terracotta" style="--swatch-color: #C45D3A" aria-label="Terracotta"></button>
+          <button class="swatch" data-colorway="black" style="--swatch-color: #1A1A1A" aria-label="Black"></button>
+          <button class="swatch" data-colorway="cream" style="--swatch-color: #F0E6D3" aria-label="Cream"></button>
+          <button class="swatch" data-colorway="olive" style="--swatch-color: #5C6B4F" aria-label="Olive"></button>
+          <button class="swatch" data-colorway="tan" style="--swatch-color: #B8956A" aria-label="Tan"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="drops" id="drops">
+      <div class="section-header reveal">
+        <h2>This Week's Drops</h2>
+        <p>Two colorways. One release window. Once they're gone, they're gone.</p>
+      </div>
+      <div class="drops__grid">
+        <article class="drop-card glass reveal">
+          <div class="drop-card__image">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Terracotta Runner — warm leather upper" loading="lazy" />
+          </div>
+          <div class="drop-card__meta">
+            <h3>Terracotta Runner</h3>
+            <p>Vachetta leather / Ochre suede</p>
+            <div class="drop-card__footer">
+              <span class="drop-card__price">£285</span>
+              <button class="btn btn--sm">Notify Me</button>
+            </div>
+          </div>
+        </article>
+        <article class="drop-card glass reveal">
+          <div class="drop-card__image">
+            <img src="https://images.unsplash.com/photo-1641687589434-a86e8de59855?auto=format&fit=crop&w=800&q=80" alt="Slate Commuter — weatherproof nubuck" loading="lazy" />
+          </div>
+          <div class="drop-card__meta">
+            <h3>Slate Commuter</h3>
+            <p>Weatherproof nubuck / Charcoal mesh</p>
+            <div class="drop-card__footer">
+              <span class="drop-card__price">£320</span>
+              <button class="btn btn--sm">Notify Me</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="craft" id="craft">
+      <div class="craft__text reveal">
+        <h2>Built to age,<br>not to expire.</h2>
+        <p>
+          We source full-grain leather from a family-owned tannery in Tuscany. 
+          Each pair is bench-made by a single craftsman over 8 hours. 
+          The sole is cemented and stitched — two points of failure, zero shortcuts.
+        </p>
+        <div class="craft__stats">
+          <div class="craft__stat reveal">
+            <span class="craft__stat-num">8h</span>
+            <span class="craft__stat-label">Per pair</span>
+          </div>
+          <div class="craft__stat reveal">
+            <span class="craft__stat-num">2</span>
+            <span class="craft__stat-label">Construction methods</span>
+          </div>
+          <div class="craft__stat reveal">
+            <span class="craft__stat-num">200</span>
+            <span class="craft__stat-label">Pairs per run</span>
+          </div>
+        </div>
+      </div>
+      <div class="craft__visual reveal">
+        <div class="craft__image">
+          <img src="https://images.unsplash.com/photo-1658123861756-93ff01992973?auto=format&fit=crop&w=800&q=80" alt="Craftsmanship detail — hand-stitching leather boot" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="collection" id="collection">
+      <div class="section-header reveal">
+        <h2>The Archive</h2>
+        <p>Past seasons. Sold out. Some survive the resale market.</p>
+      </div>
+      <div class="collection__track">
+        <div class="collection__card glass reveal">
+          <div class="collection__image">
+            <img src="https://images.unsplash.com/photo-1755194757953-a9301005114b?auto=format&fit=crop&w=600&q=80" alt="Sand Dune Low — side profile" loading="lazy" />
+          </div>
+          <h4>Sand Dune Low</h4>
+          <p>SS24 — 142 pairs</p>
+        </div>
+        <div class="collection__card glass reveal">
+          <div class="collection__image">
+            <img src="https://images.unsplash.com/photo-1615791966446-c61de437fc66?auto=format&fit=crop&w=600&q=80" alt="Oxblood Oxford — classic silhouette" loading="lazy" />
+          </div>
+          <h4>Oxblood Oxford</h4>
+          <p>FW23 — 89 pairs</p>
+        </div>
+        <div class="collection__card glass reveal">
+          <div class="collection__image">
+            <img src="https://images.unsplash.com/photo-1715001374699-1feb736d8d57?auto=format&fit=crop&w=600&q=80" alt="Ocean Terrace — sport inspired" loading="lazy" />
+          </div>
+          <h4>Ocean Terrace</h4>
+          <p>SS24 — 197 pairs</p>
+        </div>
+        <div class="collection__card glass reveal">
+          <div class="collection__image">
+            <img src="https://images.unsplash.com/photo-1779122806859-5a9e02f59e0d?auto=format&fit=crop&w=600&q=80" alt="Violet Hour — shelf display" loading="lazy" />
+          </div>
+          <h4>Violet Hour</h4>
+          <p>FW22 — 64 pairs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="journal" id="journal">
+      <div class="section-header reveal">
+        <h2>Field Notes</h2>
+        <p>Material sourcing, construction notes, and stories from the workshop.</p>
+      </div>
+      <div class="journal__grid">
+        <article class="journal__item reveal">
+          <span class="journal__tag">Materials</span>
+          <h3>Why we stopped using corrected grain leather</h3>
+          <p>The trade-off between uniformity and character, and what we chose instead.</p>
+          <span class="journal__date">12 min read</span>
+        </article>
+        <article class="journal__item reveal">
+          <span class="journal__tag">Process</span>
+          <h3>A day in the Santa Croce sull'Arno tannery</h3>
+          <p>Vegetable-tanned, pit-processed, and finished by hand over 40 days.</p>
+          <span class="journal__date">8 min read</span>
+        </article>
+        <article class="journal__item reveal">
+          <span class="journal__tag">Design</span>
+          <h3>Last development: why the 037 took 14 months</h3>
+          <p>Iterating on heel shape, shank stiffness, and the feeling of weight.</p>
+          <span class="journal__date">15 min read</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div class="footer__brand">
+      <span class="nav__logo">SOLE STUDIO</span>
+      <p>London · Est. 2021</p>
+    </div>
+    <div class="footer__links">
+      <a href="#">Shipping & Returns</a>
+      <a href="#">Size Guide</a>
+      <a href="#">Care</a>
+      <a href="#">Stockists</a>
+    </div>
+    <div class="footer__newsletter">
+      <p>Drop alerts, no spam.</p>
+      <form class="newsletter" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
